@@ -1,1 +1,1 @@
-Laravel after cleanup
+Budget Manager

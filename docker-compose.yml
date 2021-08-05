@@ -2,13 +2,13 @@ version: "3.8"
 services:
     web:
         image: nginx:1.19-alpine
-        container_name: laravel-web
+        container_name: budget-manager-web
         working_dir: /application
         volumes:
             - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
             - .:/application
         networks:
-            - laravel
+            - budget-manager
         ports:
             - ${EXTERNAL_WEBSERVER_PORT}:80
         restart: unless-stopped
@@ -24,18 +24,18 @@ services:
                 XDEBUG_START_WITH_REQUEST: ${XDEBUG_START_WITH_REQUEST}
                 XDEBUG_MODE: ${XDEBUG_MODE}
                 XDEBUG_LOG_LEVEL: ${XDEBUG_LOG_LEVEL}
-        container_name: laravel-api
+        container_name: budget-manager-api
         working_dir: /application
         user: ${CURRENT_UID}
         volumes:
             - .:/application
         networks:
-            - laravel
+            - budget-manager
         restart: unless-stopped
 
     database:
         image: mysql:5.7
-        container_name: laravel-database
+        container_name: budget-manager-database
         environment:
             - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
             - MYSQL_DATABASE=${DB_DATABASE}
@@ -44,21 +44,21 @@ services:
         ports:
             - ${DB_PORT}:3306
         networks:
-            - laravel
+            - budget-manager
         restart: unless-stopped
 
     node:
-        container_name: laravel-node
+        container_name: budget-manager-node
         image: node:16.5.0-alpine3.12
         working_dir: /application
         volumes:
             - .:/application
         networks:
-            - laravel
+            - budget-manager
         restart: unless-stopped
 
 networks:
-    laravel:
+    budget-manager:
         driver: bridge
 
 volumes:
