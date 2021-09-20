@@ -24,6 +24,6 @@
         "laravel-mix": "^6.0.6",
         "postcss": "^8.3.5",
         "tailwindcss": "^2.2.4",
-        "vue-loader": "^16.4.1"
+        "vue-loader": "^16.6.0"
     }
 }
