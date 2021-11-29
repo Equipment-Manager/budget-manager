@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e73162dd30455a5c66feeb9dec111ed",
+    "content-hash": "f714ba12de44f01284bf120487cba431",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5422,21 +5422,21 @@
     "packages-dev": [
         {
             "name": "blumilksoftware/codestyle",
-            "version": "v0.4.3",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blumilksoftware/codestyle.git",
-                "reference": "e4868bccb4c7e2d0c83e39dcf1b5d2f9209efd64"
+                "reference": "0b24f7091c587d8052ce47c1418c6145dcdbaf7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blumilksoftware/codestyle/zipball/e4868bccb4c7e2d0c83e39dcf1b5d2f9209efd64",
-                "reference": "e4868bccb4c7e2d0c83e39dcf1b5d2f9209efd64",
+                "url": "https://api.github.com/repos/blumilksoftware/codestyle/zipball/0b24f7091c587d8052ce47c1418c6145dcdbaf7e",
+                "reference": "0b24f7091c587d8052ce47c1418c6145dcdbaf7e",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.0",
-                "symplify/easy-coding-standard": "9.3.12"
+                "symplify/easy-coding-standard": "9.4.70"
             },
             "require-dev": {
                 "composer/composer": "2.*",
@@ -5463,9 +5463,9 @@
             "description": "Blumilk codestyle configurator",
             "support": {
                 "issues": "https://github.com/blumilksoftware/codestyle/issues",
-                "source": "https://github.com/blumilksoftware/codestyle/tree/v0.4.3"
+                "source": "https://github.com/blumilksoftware/codestyle/tree/v0.7.0"
             },
-            "time": "2021-07-27T06:23:27+00:00"
+            "time": "2021-11-29T09:21:26+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -7858,16 +7858,16 @@
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "v9.3.12",
+            "version": "9.4.70",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/easy-coding-standard.git",
-                "reference": "5fa2935c28e572e6a0f8f448dd9ca4f17f5324ad"
+                "reference": "9276b0c7a1a5671fc4a067656ab40d0aea42aaca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/5fa2935c28e572e6a0f8f448dd9ca4f17f5324ad",
-                "reference": "5fa2935c28e572e6a0f8f448dd9ca4f17f5324ad",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/9276b0c7a1a5671fc4a067656ab40d0aea42aaca",
+                "reference": "9276b0c7a1a5671fc4a067656ab40d0aea42aaca",
                 "shasum": ""
             },
             "require": {
@@ -7877,14 +7877,15 @@
                 "friendsofphp/php-cs-fixer": "<3.0",
                 "squizlabs/php_codesniffer": "<3.6"
             },
-            "replace": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "squizlabs/php_codesniffer": "^3.6"
-            },
             "bin": [
                 "bin/ecs"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "9.5-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -7896,7 +7897,7 @@
             ],
             "description": "Prefixed scoped version of ECS package",
             "support": {
-                "source": "https://github.com/symplify/easy-coding-standard/tree/v9.3.12"
+                "source": "https://github.com/symplify/easy-coding-standard/tree/9.4.70"
             },
             "funding": [
                 {
@@ -7908,7 +7909,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-17T20:57:41+00:00"
+            "time": "2021-10-02T16:09:04+00:00"
         },
         {
             "name": "theseer/tokenizer",
